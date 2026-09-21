@@ -25,7 +25,8 @@ int main(int argc, char **argv) {
     {
         printf("Subvetor nao encontrado.\n");
     }
-
+    
+    return 0;
 }
 
 int *buscar_subvetor(int *vetor, int tam_v, int *sub, int tam_s) {
