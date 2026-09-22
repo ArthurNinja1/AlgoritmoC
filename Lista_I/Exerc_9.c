@@ -1,6 +1,6 @@
 //Escreva uma função que recebe por parâmetro um valor inteiro e positivo N e retorna
 //o valor de S.
-//S = 1 + 1/1! + ½! + 1/3! + 1 /N!
+// S = 1 + 1/1! + 1/2! + 1/3! .... + 1/N!
 
 #include <stdio.h>
 
@@ -16,9 +16,20 @@ int fatorial(int n) {
 }
 
 float calcularS(int n) {
-    float S = 1.0; // Começa com o termo 1
+    float S = 1.0;
     for (int i = 1; i <= n; i++) {
         S += 1.0 / fatorial(i);
     }
     return S;
+}
+
+int main(int argc, int **argv) {
+    int N;
+    printf("De um valor de N: ");
+    scanf("%d", &N);
+
+    float resultado = calcularS(N);
+
+    printf("O resultado da expressão eh: %f", resultado);
+    return 0;
 }
