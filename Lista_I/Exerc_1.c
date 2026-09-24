@@ -6,6 +6,7 @@
 #define PI 3.14159
 
 float calcularVolume(float raio) {
+    // usa da funcao  de potencia da math.h para fazer a conta
     return (4.0 / 3.0) * PI * pow(raio, 3);
 }
 

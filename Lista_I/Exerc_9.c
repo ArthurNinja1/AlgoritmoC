@@ -15,6 +15,7 @@ int fatorial(int n) {
     return resultado;
 }
 
+// a formula de calcularS se alto chamma fatorial até que chegue em N
 float calcularS(int n) {
     float S = 1.0;
     for (int i = 1; i <= n; i++) {

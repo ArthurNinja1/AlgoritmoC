@@ -3,7 +3,9 @@
 
 #include <stdio.h>
 
+
 int calcularIdadeEmDias(int anos, int meses, int dias) {
+    // Mesma coisa que o exercicio 3, mas usando a formula ao contrario
     return (anos * 365) + (meses * 30) + dias;
 }
 

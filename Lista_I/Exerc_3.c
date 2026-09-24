@@ -4,6 +4,7 @@
 #include <stdio.h>
 
 void imprimirTempo(int segundos) {
+    // formulas para conversao de tempo a partir dos segundos
     int horas = segundos / 3600;
     int minutos = (segundos % 3600) / 60;
     int segundosRestantes = segundos % 60;

@@ -10,6 +10,7 @@ void calcularBhaskara(float a, float b, float c) {
     if (delta < 0) {
         printf("Não é possível calcular as raízes reais.\n");
     } else {
+        // se não for delta < 0, faz as contas para x1 e x2
         float raiz1 = (-b + sqrt(delta)) / (2 * a);
         float raiz2 = (-b - sqrt(delta)) / (2 * a);
         printf("As raízes da equação são: %.4f e %.4f\n", raiz1, raiz2);
