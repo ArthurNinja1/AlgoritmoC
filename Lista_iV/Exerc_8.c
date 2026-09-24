@@ -43,9 +43,11 @@ int diferencaDia(Data vetor[2]) {
     };
 
     // Converte primeira data para dias
+    // pega a quantia de anos e multiplica por 365
     dias1 = vetor[0].ano * 365;
 
     for (int i = 0; i < vetor[0].mes - 1; i++) {
+        // usa o vetor de dias do mes para ter precisão nas datas
         dias1 += diasMes[i];
     }
 
@@ -60,7 +62,7 @@ int diferencaDia(Data vetor[2]) {
 
     dias2 += vetor[1].dia;
 
-    // Retorna diferenca positiva
+    // Evitar uma diferença negativa
     if (dias1 > dias2) {
         return dias1 - dias2;
     }

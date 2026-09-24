@@ -1,6 +1,8 @@
 //Faça um procedimento que recebe por parâmetro os valores necessário para o cálculo
 //da fórmula de báskara e imprima as suas raízes, caso seja possível calcular.
 
+
+//Eu li a lista errada e fiz duas vezes kk
 #include <stdio.h>
 #include <math.h>
 
